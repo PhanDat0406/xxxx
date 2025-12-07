@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Nhạc yêu thích</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .song-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 20px;
+    }
+    .song-item {
+      padding: 14px;
+      border-radius: 12px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08);
+      transition: .2s;
+    }
+    .song-item:hover {
+      background: rgba(255,255,255,0.12);
+      transform: translateY(-3px);
+    }
+    .song-item a {
+      color: var(--text);
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 600;
+    }
+    .back-btn {
+  display: inline-block;
+  padding: 10px 16px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.10);
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--text);
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  transition: .2s;
+}
+
+.back-btn:hover {
+  background: rgba(255,255,255,0.12);
+  transform: translateY(-3px);
+}
+
+  </style>
+</head>
+
+<body>
+  <main class="main">
+    <div class="container">
+       
+      <section class="card">
+        <h2 class="card-title">🎧 Nhạc yêu thích</h2>
+
+        <div class="song-list">
+
+          <!-- Bài 1 -->
+          <div class="song-item">
+            <a href="https://www.youtube.com/watch?v=OrDB4jpA1g8" target="_blank">
+              Thiên Lý Ơi – Jack
+            </a>
+          </div>
+
+          <!-- Bài 2 -->
+          <div class="song-item">
+            <a href="https://www.youtube.com/watch?v=Jk38OqdAQxc" target="_blank">
+              Sóng Gió – Jack & K-ICM
+            </a>
+          </div>
+
+          <!-- Bài 3 -->
+          <div class="song-item">
+            <a href="https://www.youtube.com/watch?v=E6ZzW3R4o4U" target="_blank">
+              Hồng Nhan – Jack
+            </a>
+          </div>
+
+
+        </div>
+
+      </section>
+       <button class="back-btn" onclick="window.location.href='index.html'">⬅ Quay lại</button>
+    </div>
+  </main>
+</body>
+</html>

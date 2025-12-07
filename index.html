@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Trang cá nhân</title>
+
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <aside class="sidebar" aria-label="Sidebar">
+    <button class="icon-btn" title="Home">🏠</button>
+    <button class="icon-btn" title="Photos">🖼️</button>
+    <button id="btn-music" class="icon-btn" title="Music">🎧</button>
+    <div class="spacer"></div>
+    <button class="icon-btn" title="Theme">☀️</button>
+  </aside>
+
+  <main class="main">
+    <div class="container">
+      <!-- Banner -->
+      <section class="card banner" style="width: 100%; display: flex; justify-content: center; align-items: center;">
+        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS-xTtb9BxF7R3gohZvaTzldmTghj59m3sp7roMy7HiJvpB_5-v" alt="Banner" style="width: 350px; height: auto;" />
+      </section>
+
+      <!-- Hello -->
+      <section class="card">
+        <h2 class="card-title">Hello!</h2>
+        <p class="card-body">
+          Thanks for visiting this little corner of the internet! 
+          My name is <strong>Le Thi Phuong Thao</strong>
+        </p>
+      </section>
+
+      <!-- Who am I -->
+      <section class="card">
+        <h2 class="card-title">Who am I ?</h2>
+        <p class="card-body">
+          I’m just a chill girl and i am not a cow
+
+        </p>
+      </section>
+
+      <!-- Date of birth -->
+      <section class="card small">
+        <h3 class="card-title">Date of birth</h3>
+        <p class="card-body muted">Knowing j97's birthday means knowing my birthday</p>
+      </section>
+    </div>
+  </main>
+
+  <!-- small accessibility helper -->
+  <script>
+    // Optional: prevent focusing outline being too intrusive
+    document.body.addEventListener('mousedown', () => document.body.classList.add('using-mouse'));
+    document.body.addEventListener('keydown', () => document.body.classList.remove('using-mouse'));
+  </script>
+  <script>
+  document.getElementById("btn-music").addEventListener("click", () => {
+    window.location.href = "music.html";
+  });
+</script>
+
+</body>
+</html>
